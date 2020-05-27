@@ -1,0 +1,165 @@
+._04xlpAA {
+    line-height: 0.94;
+    font-family: 'YACgEbc43jc 0', _fb_, auto;
+    font-size: 63.1589px;
+    text-transform: uppercase;
+    color: rgb(96, 101, 96);
+  }
+
+  .JsGRdQA {
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(96, 101, 96);
+    text-decoration: none;
+  }
+
+  .lDu2cg {
+    object-fit: fill;
+    width: 130px;
+  }
+
+  .ql-editor {
+    margin-left: 1.5rem;
+  }
+
+  ._04xlpA {
+    line-height: 1.4;
+    font-family: 'YACgEbc43jc 0', _fb_, auto;
+    font-size: 36px;
+    text-transform: none;
+    text-align: center;
+    color: rgb(96, 101, 96);
+    max-width: 50vw;
+  }
+
+  .JsGRdQ {
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(96, 101, 96);
+    text-decoration: none;
+  }
+
+  .carousel-item {
+    height: 200px;
+  }
+
+.cover-images{
+position: absolute;
+}
+  .baby {
+    object-fit: fill;
+    height: 30vh;
+    z-index: 3;
+  }
+
+  .cloud-sm {
+    position: relative;
+    animation-name: cloudmovesm;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    object-fit: fill;
+    height: 20vh;
+  }
+
+  .cloud-md {
+    position: relative;
+    animation-name: cloudmovemd;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    object-fit: fill;
+    height: 30vh;
+    z-index: 1;
+  }
+
+  .cloud-lg {
+    position: relative;
+    animation-name: cloudmovelg;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    object-fit: fill;
+    height: 40vh;
+    z-index: 2;
+  }
+
+  @keyframes cloudmovesm {
+    0% {
+      left: 0px;
+    }
+
+    50% {
+      left: 50px;
+    }
+
+    100% {
+      left: 0px;
+    }
+  }
+
+  @keyframes cloudmovemd {
+    0% {
+      left: 0px;
+    }
+
+    50% {
+      left: 80px;
+    }
+
+    100% {
+      left: 0px;
+    }
+  }
+
+  @keyframes cloudmovelg {
+    0% {
+      right: 0px;
+    }
+
+    50% {
+      right: 60px;
+    }
+
+    75% {
+      right: 80px;
+    }
+
+    100% {
+      right: 0px;
+    }
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .lDu2cg {
+      width: 80px;
+    }
+
+    ._04xlpAA {
+      font-size: 42px;
+    }
+
+    .ql-editor {
+      margin-left: 0.5rem;
+    }
+
+    ._04xlpA {
+      line-height: 1.4;
+      font-size: 24px;
+      max-width: 80vw;
+    }
+
+    .cloud-sm{
+      display: none;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {}
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {}
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {}
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {}
