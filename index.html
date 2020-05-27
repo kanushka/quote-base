@@ -12,6 +12,46 @@
     .carousel-item {
       height: 300px;
     }
+    .carousel-item.active {
+        display: block;
+        padding: 10%;
+    }
+    .cloud-sm {
+      position: relative;
+      animation-name: cloudmovesm;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+    .cloud-md {
+      position: relative;
+      animation-name: cloudmovemd;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+    }
+    .cloud-lg {
+      position: relative;
+      animation-name: cloudmovelg;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes cloudmovesm {
+      0%   {left:0px;}
+      50%  {left:50px;}
+      100% {left:0px;}
+    }
+    @keyframes cloudmovemd {
+      0%   {left:0px;}
+      50%  {left:80px;}
+      100% {left:0px;}
+    }
+    @keyframes cloudmovelg {
+      0%   {right:0px;}
+      50%  {right:60px;}
+      75%  {right:80px;}
+      100% {right:0px;}
+    }
+
   </style>
 </head>
 
@@ -19,7 +59,7 @@
   <div class="container">
     <div class="row" style="height: 90vh;">
       <div class="col-12 d-flex align-items-center justify-content-center">
-        <img class="lDu2cg" src="./home_files/screen.svg" draggable="false" style="object-fit: fill; width: 130px;" />
+        <img class="lDu2cg" src="./images/screen.svg" draggable="false" style="object-fit: fill; width: 130px;" />
         <div class="ql-editor ml-4" data-gramm="false" contenteditable="false"
           style="transform: translate(0em, 0.513166em);">
           <p class="_04xlpA direction-ltr align-start para-style-body mb-0" style="
@@ -54,14 +94,14 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row" style="height: 50vh;">
       <div class="col-12">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
+          <!-- <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
+          </ol> -->
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="col-12 d-flex justify-content-center">
@@ -175,14 +215,23 @@ not a good face.</span>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row" style="height: 50vh;">
       <div class="col-12">
-        <!-- image under slider -->
+        <div class="cover-images d-flex justify-content-center align-items-center">
+          <img class="cloud-sm" src="./images/lightcloud.svg" draggable="false"
+          style="object-fit: fill; height: 20vh;" />
+          <img class="" src="./images/upgirl.svg" draggable="false"
+          style="object-fit: fill; height: 30vh;" />
+          <img class="cloud-md" src="./images/lightcloud.svg" draggable="false"
+          style="object-fit: fill; height: 30vh; z-index: 1;" />
+          <img class="cloud-lg" src="./images/tightcloud.svg" draggable="false"
+          style="object-fit: fill; height: 40vh; z-index: 2;" />
+        </div>
       </div>
     </div>
 
-    <div class="row mb-4">
-      <div class="col-12 d-flex justify-content-center">
+    <div class="row mb-4" style="height: 50vh;">
+      <div class="col-12 d-flex justify-content-center align-items-end">
         <p class="_04xlpA direction-ltr align-center para-style-body" style="
               line-height: 1.4;
               font-family: 'YACgEbc43jc 0', _fb_, auto;
@@ -199,9 +248,9 @@ not a good face.</span>
         </p>
       </div>
       <div class="col-sm-12 d-flex justify-content-center mt-4">
-        <img class="lDu2cg mr-3 facebook-btn p-1" src="./home_files/screen(3).svg" draggable="false"
+        <img class="lDu2cg mr-3 facebook-btn p-1" src="./images/screen(3).svg" draggable="false"
           style="object-fit: fill; height: 45px; cursor: pointer;" />
-        <img class="lDu2cg ml-3 instagram-btn p-1" src="./home_files/screen(2).svg" draggable="false"
+        <img class="lDu2cg ml-3 instagram-btn p-1" src="./images/screen(2).svg" draggable="false"
           style="object-fit: fill; height: 50px; cursor: pointer;" />
       </div>
     </div>
@@ -301,7 +350,7 @@ not a good face.</span>
   <script>
     $(function () {
       $('.carousel').carousel({
-        interval: 6000,
+        interval: 60000,
         pause: false,
       })
     });
